@@ -44,6 +44,7 @@ export default {
         };
         const { data } = await loginUser(userData);
         console.log(data.user.username);
+        this.$router.push('/main');
         // this.initForm();
         this.logMessage = `${data.user.username}님 환영합니다.`;
       } catch (error) {
@@ -64,4 +65,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.btn {
+  color: white;
+}
+</style>

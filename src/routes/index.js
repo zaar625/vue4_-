@@ -24,5 +24,9 @@ export default new VueRouter({
       path: '*',
       component: () => import('@/views/NotFoundPage'),
     },
+    {
+      path: '/main',
+      component: () => import('@/views/MainPage'),
+    },
   ],
 });
