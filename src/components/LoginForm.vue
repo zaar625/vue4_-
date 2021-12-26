@@ -44,9 +44,10 @@ export default {
         };
         const { data } = await loginUser(userData);
         console.log(data.user.username);
-        this.$router.push('/main');
         // this.initForm();
         this.logMessage = `${data.user.username}님 환영합니다.`;
+        this.$store.commit('setUsername', data.user.username);
+        this.$router.push('/main');
       } catch (error) {
         //에러핸들링
         console.log(error.response.data);
