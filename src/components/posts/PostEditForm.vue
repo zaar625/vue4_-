@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { fetchPost } from '@/api/post';
+import { fetchPost, editPost } from '@/api/post';
 
 export default {
   data() {
