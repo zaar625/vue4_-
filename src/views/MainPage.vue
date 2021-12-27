@@ -23,11 +23,8 @@ import LoadingSpinner from '@/components/common/LoadingSpinner';
 import { fetchPosts } from '@/api/index';
 
 export default {
-  components: { PostListItem },
-  computed: {
-    PostListItem,
-    LoadingSpinner,
-  },
+  components: { PostListItem, LoadingSpinner },
+
   data() {
     return {
       postItems: [],
